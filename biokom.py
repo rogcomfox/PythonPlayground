@@ -74,14 +74,12 @@ def bronkitis():
     print("\nAnda Diwajibkan Melakukan Langkah Pemeriksaan Bronkitis")
 
 def covid(condition):
+    print("Nama Pasien: ", patientInfo[0])
+    print("\nJenis Kelamin: ", patientInfo[1])
     if condition == "iya".casefold():
-        print("Nama Pasien: ", patientInfo[0])
-        print("\nJenis Kelamin: ", patientInfo[1])
         print("\nAnda Diwajibkan Melakukan Swab")
     elif condition == "tidak".casefold():
-        print("Nama Pasien: ", patientInfo[0])
-        print("\nJenis Kelamin: ", patientInfo[1])
-        print("\nAnda Diwajibkan Melakukan Langkah Pemeriksaan Bronkitis")
+        print("\nAnda Diwajibkan Melakukan Langkah Pemeriksaan Pneumonia")
 
 if __name__ == "__main__":
     print("Selamat Datang!")
